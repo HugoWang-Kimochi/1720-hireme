@@ -152,53 +152,52 @@ h1 {
 /*********************** FORM LAYOUT ************************/
 form {
   margin: 1rem 10px;
+}
 
-  label {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding-top: 0.2rem;
-    color: var(--color-mygrey-50);
-    text-transform: uppercase;
-  }
+form label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding-top: 0.2rem;
+  color: var(--color-mygrey-50);
+  text-transform: uppercase;
+}
 
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="email"],
-  textarea,
-  select {
-    display: block;
-    margin: 0.1rem 0 1rem 0;
-    padding: .6rem 10px;
-    border: 1px solid var(--color-mygrey-30);
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color: var(--color-mygrey-30);
-    font-size: .8rem;
-    background-color: var(--color-mygrey-05);
-    width: 90%;
+form input[type="text"],
+form input[type="tel"],
+form input[type="url"],
+form input[type="email"],
+form textarea,
+form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.6rem 10px;
+  border: 1px solid var(--color-mygrey-30);
+  border-radius: 4px;
+  border-left-width: 5px;
+  font-size: 0.8rem;
+  background-color: var(--color-mygrey-05);
+  width: 90%;
+}
 
-    &::placeholder {
-      color: var(--color-mygrey-50)
-    }
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--color-mygrey-50);
+}
 
-  }
+form input:required,
+form select:required {
+  border-left-color: var(--color-primary);
+}
 
-  input:required,
-  select:required {
-    border-left-color: var(--color-primary);
-  }
+form input:focus {
+  border-left-color: var(--color-secondary);
+  outline: none;
+}
 
-  input:focus {
-    border-left-color: var(--color-secondary);
-    outline: none;
-  }
-
-  input:required:valid,
-  select:required:valid {
-    border-left-color: var(--color-secondary);
-  }
+form input:required:valid,
+form select:required:valid {
+  border-left-color: var(--color-secondary);
 }
 
 input[type="submit"] {
@@ -210,12 +209,11 @@ input[type="submit"] {
   padding: 0.75rem 1.5rem;
   margin: 2rem 0;
   font-size: 1rem;
-  -webkit-appearance: none;
   appearance: none;
+}
 
-  &:hover {
-    box-shadow: 0 0 10px var(--color-mygrey-90);
-  }
+input[type="submit"]:hover {
+  box-shadow: 0 0 10px var(--color-mygrey-90);
 }
 
 /*********************** STYLE FORM RESULTS ************************/
@@ -225,18 +223,18 @@ input[type="submit"] {
   padding: 10px;
   border: 1px solid var(--color-mygrey-40);
   border-radius: 6px;
+}
 
-  p {
-    padding: 5px 0;
-    font-weight: 500;
-    color: var(--color-secondary);
-    line-height: 1.6;
-  }
+.results p {
+  padding: 5px 0;
+  font-weight: 500;
+  color: var(--color-secondary);
+  line-height: 1.6;
+}
 
-  span {
-    font-weight: 400;
-    color: white;
-  }
+.results span {
+  font-weight: 400;
+  color: white;
 }
 
 /********************** SOCIAL STUFF ***********************/
